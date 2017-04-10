@@ -67,3 +67,15 @@ var myPlants = [
 var secondTree = myPlants[1].list[1];
 
 // If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:
+
+function multiplyAll(arr) {
+  var product = 1;
+  for (i = 0; i < arr.length; i++) {
+    for (j = 0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+}
+
+multiplyAll([[1,2],[3,4],[5,6,7]]);
